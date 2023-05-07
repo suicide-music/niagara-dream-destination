@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Playfair+Display+SC&display=swap"
       rel="stylesheet"
     />
-    <title>Niagara Falls</title>
+    <title>🌊 Niagara Falls</title>
     <style>
       body {
         font-family: "Lato", sans-serif;
@@ -61,6 +61,10 @@
         border-color: #343a40;
         cursor: pointer;
       }
+
+      a {
+        all: unset;
+      }
       .container {
         max-width: fit-content;
         margin: 0 auto;
@@ -80,6 +84,7 @@
         width: 660px;
         height: 366px;
         object-fit: cover;
+        margin: 50px 0;
       }
 
       .grid {
@@ -89,6 +94,7 @@
 
       .grid-2-columns {
         grid-template-columns: 1fr 1fr;
+        padding: 25px;
       }
 
       .attractions {
@@ -97,6 +103,12 @@
 
       .attraction-group {
         background-color: #f8f5f159;
+        padding: 25px 50px;
+        margin: 40px 70px;
+      }
+
+      .attractions-text-block {
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -130,7 +142,7 @@
               alt="Niagara Cruise"
               width="600px"
             />
-            <div>
+            <div class="attractions-text-block">
               <h4>NIAGARA CITY CRUISE</h4>
               <p class="attractions">
                 Experience the thrill of the mist aboard Canada's top visitor
@@ -145,11 +157,18 @@
                 witness the illumination of the falls and enjoy a light mist
                 experience.
               </p>
-              <button>Learn more</button>
+              <button>
+                <a
+                  href="https://www.cityexperiences.com/niagara-ca/city-cruises/voyage-to-the-falls-boat-tour/"
+                  target="_blank"
+                >
+                  Learn more</a
+                >
+              </button>
             </div>
           </div>
           <div class="grid grid-2-columns">
-            <div>
+            <div class="attractions-text-block">
               <h4>ZIPLINE TO THE FALLS</h4>
               <p class="attractions">
                 Embark on a thrilling adventure with WildPlay's Zipline to the
@@ -164,7 +183,13 @@
                 thrill of adventure and witness the beauty of Niagara Falls like
                 never before.
               </p>
-              <button>Learn more</button>
+              <button>
+                <a
+                  href="https://www.niagaraparks.com/visit/attractions/wildplay-zipline-falls/"
+                  target="_blank"
+                  >Learn more</a
+                >
+              </button>
             </div>
             <img
               class="img-attractions"
@@ -181,27 +206,27 @@
               alt="Tunnel"
               width="600px"
             />
-            <div>
+            <div class="attractions-text-block">
               <h4>THE TUNNEL AT THE POWER STATION</h4>
               <p class="attractions">
                 Explore the fascinating history of the century-old power station
-                from a unique perspective, 180 feet beneath the main generating
-                floor. Descend into the tunnel in a glass-paneled elevator and
-                marvel at the power station's hidden decks. Discover how it was
-                excavated in 1901 using rudimentary tools such as pickaxes,
-                shovels, and lanterns. Learn how it expelled the station's spent
-                waters back into the Niagara River at the base of the falls. The
-                tunnel served as an exit point for the water used in generating
-                hydropower for over a century. Follow the water's path and
-                journey through the tunnel to a viewing platform where the
-                tunnel emptied into the Niagara River. For the first time ever,
-                the newly constructed viewing platform offers unparalleled
-                access to a new perspective of the lower Niagara River, with
-                stunning views of both the Horseshoe and American Falls. Don't
-                miss out on this opportunity to dig deep into history and
-                witness the beauty of Niagara Falls like never before.
+                from a truly unique perspective, 55 meters beneath the main
+                generating floor. Descend into the tunnel in a glass-paneled
+                elevator and marvel at the power station's hidden decks, which
+                were excavated in 1901 using rudimentary tools such as pickaxes,
+                shovels, and lanterns. Follow the path of the water and journey
+                through the tunnel to a viewing platform where it emptied into
+                the Niagara River. Don't miss out on this once-in-a-lifetime
+                opportunity to witness the beauty of Niagara Falls from a
+                perspective few have ever experienced.
               </p>
-              <button>Learn more</button>
+              <button>
+                <a
+                  href="https://www.niagaraparks.com/visit/attractions/niagara-parks-power-station/the-tunnel-niagara-falls"
+                  target="_blank"
+                  >Learn more</a
+                >
+              </button>
             </div>
           </div>
         </div>
