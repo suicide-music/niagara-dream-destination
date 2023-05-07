@@ -160,6 +160,31 @@
       .newsletter-left h2 {
         margin: 5px;
       }
+
+      .gallery-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 50px;
+      }
+
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f5f159;
+      }
+
+      .gallery-section {
+        background-color: #f8f5f159;
+        padding: 25px 50px;
+      }
     </style>
   </head>
   <body>
@@ -304,9 +329,48 @@
           </form>
         </div>
       </div>
-      <div>
+      <div class="gallery-section">
         <h2>GALLERY</h2>
-        <img />
+        <div class="gallery-container">
+          <div class="gallery">
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/849/original/2f.jpg?1683481435"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/868/original/maxresdefault.jpg?1683486920"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/860/original/221027160405-01-tunnel-niagara-falls.jpg?1683486662"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/861/original/ap_17363653603214_0.jpg?1683486666"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/862/original/Butterfly-Conservatory-Monarch.jpg?1683486670"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/863/original/horseshoe-falls.jpg?1683486676"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/864/original/https___tf-cmsv2-smithsonianmag-media.s3.amazonaws.com_filer_public_ae_08_ae08deff-6a58-484a-827d-186e687c9159_portal_view_american_falls_2.jpg?1683486680"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/865/original/Niagara-Falls-Generating-Station-Feature.jpg?1683486694"
+            />
+            <img
+              class="gallery-img"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/867/original/Niagara-Falls-White-Water-Walk-Feature.jpg?1683486871"
+            />
+          </div>
+        </div>
       </div>
       <footer>Footer</footer>
     </div>
