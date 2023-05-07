@@ -65,6 +65,34 @@
       a {
         all: unset;
       }
+
+      img {
+        border-radius: 5px;
+      }
+
+      input[type="text"] {
+        border: 2px solid #343a40;
+        width: 70%;
+        padding: 25px;
+        margin: 10px;
+      }
+
+      .submit {
+        background-color: #0cbeda;
+        color: white;
+        border: 2px solid #343a40;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease-in-out;
+        width: 60%;
+        margin-top: 12px;
+        height: 72px;
+        border-radius: 0;
+      }
+
+      .submit:hover {
+        background-color: #75e5f7;
+      }
       .container {
         max-width: fit-content;
         margin: 0 auto;
@@ -109,6 +137,28 @@
 
       .attractions-text-block {
         margin: 0 auto;
+      }
+
+      .newsletter-right {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/850/original/Niagara-Falls-Winter-Title-1.jpg?1683481561");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .newsletter-left h2 {
+        margin: 5px;
       }
     </style>
   </head>
@@ -231,15 +281,27 @@
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <h2>NEWSLETTER</h2>
-          <img />
-          <p>Text</p>
+      <div class="grid grid-2-columns">
+        <div class="newsletter-right">
+          <h2>Niagara Falls Newsletter</h2>
+          <p>
+            Sign up to receive emails about upcoming events and promotions at
+            Niagara Parks.
+          </p>
         </div>
-        <div>
-          <h2>STAY CONNECTED</h2>
-          <form>Form</form>
+        <div class="newsletter-left">
+          <h2 class="newsletter-left">STAY CONNECTED</h2>
+          <p class="attractions">
+            Subscribe to receive updates on events, upcoming shows, and special
+            promotions.
+          </p>
+          <form>
+            <input type="text" placeholder="FIRST NAME" />
+            <input type="text" placeholder="LAST NAME" /><input
+              type="text"
+              placeholder="EMAIL"
+            /><button class="submit">SUBMIT</button>
+          </form>
         </div>
       </div>
       <div>
