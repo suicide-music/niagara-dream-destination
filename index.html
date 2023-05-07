@@ -4,45 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <title>Niagara Falls</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        font-size: 35px;
+      }
+
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/813/original/header.jpg?1683464436");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        height: 650px;
+        padding: 160px;
+      }
+      header h1 {
+        font-size: 150px;
+        font-family: "Playfair Display SC", serif;
+      }
+      .container {
+        max-width: fit-content;
+        margin: 0 auto;
+      }
+      .sub-header {
+        font-family: "Great Vibes", cursive;
+        font-size: 100px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Niagara Falls</h1>
-      <h2><i>Dream Destination</i></h2>
-    </header>
-    <div>
-      Welcome to Niagara Falls, a breathtaking natural wonder that attracts
-      millions of visitors every year. With its towering waterfalls, majestic
-      cliffs, and stunning scenery, Niagara Falls is a must-see destination that
-      promises to leave you in awe. From thrilling boat rides to scenic hikes,
-      Niagara Falls offers a range of activities for all kinds of travelers. So
-      come and experience the wonder of Niagara Falls for yourself and create
-      memories to last a lifetime.
-    </div>
-    <div>
-      <h2>Top Attractions</h2>
-      <img />
-      <p>Text</p>
-      <p>Text</p>
-      <img /> <img />
-      <p>Text</p>
-    </div>
-    <div>
+    <div class="container">
+      <header>
+        <h1>Niagara Falls</h1>
+        <h2 class="sub-header">Dream Destination</h2>
+      </header>
+      <div class="into-text">
+        Welcome to Niagara Falls, a breathtaking natural wonder that attracts
+        millions of visitors every year. With its towering waterfalls, majestic
+        cliffs, and stunning scenery, Niagara Falls is a must-see destination
+        that promises to leave you in awe. From thrilling boat rides to scenic
+        hikes, Niagara Falls offers a range of activities for all kinds of
+        travelers. So come and experience the wonder of Niagara Falls for
+        yourself and create memories to last a lifetime.
+      </div>
       <div>
-        <h2>Newsletter</h2>
+        <h2>Top Attractions</h2>
         <img />
+        <p>Text</p>
+        <p>Text</p>
+        <img /> <img />
         <p>Text</p>
       </div>
       <div>
-        <h2>Stay Connected</h2>
-        <form>Form</form>
+        <div>
+          <h2>Newsletter</h2>
+          <img />
+          <p>Text</p>
+        </div>
+        <div>
+          <h2>Stay Connected</h2>
+          <form>Form</form>
+        </div>
       </div>
+      <div>
+        <h2>Gallery</h2>
+        <img />
+      </div>
+      <footer>Footer</footer>
     </div>
-    <div>
-      <h2>Gallery</h2>
-      <img />
-    </div>
-    <footer>Footer</footer>
   </body>
 </html>
