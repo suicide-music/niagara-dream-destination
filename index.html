@@ -84,7 +84,6 @@
           ),
           url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/894/original/bsez82.jpg?1683490798");
         background-size: cover;
-        grid-template-columns: 1fr;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
@@ -200,6 +199,27 @@
       .gallery-section {
         background-color: #f8f5f159;
         padding: 25px 50px;
+      }
+
+      @media (max-width: 900px) {
+        header h1 {
+          font-size: 60px;
+          text-align: center;
+        }
+        .sub-header {
+          font-size: 60px;
+          padding-top: 80px;
+          text-align: center;
+        }
+
+        footer {
+          grid-template-columns: 1fr;
+        }
+
+        .grid-2-columns {
+          grid-template-columns: 1fr;
+          padding: 25px;
+        }
       }
     </style>
   </head>
