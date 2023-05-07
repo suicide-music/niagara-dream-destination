@@ -341,7 +341,7 @@
             <input type="text" placeholder="LAST NAME" /><input
               type="text"
               placeholder="EMAIL"
-            /><button class="submit">SUBMIT</button>
+            /><button class="submit" id="submit">SUBMIT</button>
           </form>
         </div>
       </div>
@@ -419,5 +419,14 @@
         </div>
       </footer>
     </div>
+    <script>
+      let formButton = document.querySelector("#submit");
+      formButton.addEventListener("click", infoSubmitted);
+
+      function infoSubmitted(event) {
+        event.preventDefault();
+        alert("Thank you for subsribing!");
+      }
+    </script>
   </body>
 </html>
