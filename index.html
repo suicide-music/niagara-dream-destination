@@ -77,6 +77,22 @@
         margin: 10px;
       }
 
+      footer {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/894/original/bsez82.jpg?1683490798");
+        background-size: cover;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        color: white;
+        padding: 5px;
+        font-size: 20px;
+      }
+
       .submit {
         background-color: #0cbeda;
         color: white;
@@ -372,7 +388,36 @@
           </div>
         </div>
       </div>
-      <footer>Footer</footer>
+      <footer>
+        <div>
+          <h4>More about Niagara Falls</h4>
+          <a href="https://www.niagaraparks.com/"
+            ><b><u>Niagara Parks Official Website</u></b></a
+          >
+        </div>
+        <div>
+          <h4>About me</h4>
+          <p class="footer">
+            My name is Viktorija and I love coding. <br />Visit my
+            <a
+              href="https://viktorija-portfolio.netlify.app/"
+              style="display: inline"
+              ><b><u>website</u></b></a
+            >
+            and
+            <a href="https://github.com/suicide-music" style="display: inline"
+              ><b><u>GitHub</u></b></a
+            >
+            for more projects!
+          </p>
+        </div>
+        <div>
+          <h4>About this website</h4>
+          <p class="footer">
+            I created this page for SheCodes "Dream Destination" Challenge .
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
